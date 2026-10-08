@@ -1,0 +1,46 @@
+{
+  "name": "dsh-market-sidebar",
+  "version": "0.1.0",
+  "description": "Puts the dshmarket plugin market on the DSH sidebar as a first-class panel, above the built-in Plugins entry. · 把 dshmarket 插件市场搬进 DSH 侧边栏，排在「新会话」下方、内置「插件」上方。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "marketplace",
+    "sidebar"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node scripts/check-bundle.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingchenhui0618-arch/dsh-market-sidebar.git"
+  },
+  "author": "dingchenhui0618-arch",
+  "license": "MIT"
+}

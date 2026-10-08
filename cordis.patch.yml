@@ -1,0 +1,7 @@
+# dsh bundle patch：把本插件插进 profile 的层栈。
+#
+# 本插件是纯客户端插件：host 半边是空操作，行为全部发生在浏览器里
+# （注册 sidebar.panellist + main，把 dshmarket 的面板渲染进去）。
+- insert:
+    - id: dsh-market-sidebar
+      name: dsh-market-sidebar
