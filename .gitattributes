@@ -1,0 +1,5 @@
+# 手写的 bundle 与配置一律用 LF：这台机器 core.autocrlf 会把它们转成 CRLF，
+# 换到另一台机器再 diff 就全是噪音。
+* text=auto eol=lf
+*.png binary
+*.ico binary
